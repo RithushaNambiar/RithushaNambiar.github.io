@@ -1,0 +1,330 @@
+/* Resetting some default styles for better consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colors */
+:root {
+    --red: #990816;
+    --orange: #F7941D;
+    --pink: #e25a93;
+    --teal: #029981;
+    --purple: #835FA8;
+    --brightYellow: #fbd206;
+    --black: #231F20;
+}
+
+/* Layout Styling */
+body {
+    font-family: 'Bebas Neue';
+    line-height: 0.8;
+    min-width: 400px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 48px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    font-size: 18pt;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: grey;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 64pt;
+}
+
+h2{
+    font-weight: 400;
+    font-size: 32pt;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 24pt;
+}
+
+.red{
+    color: var(--red);
+}
+
+.red-hover:hover {
+    color: var(--red);
+}
+
+.float-right{
+    float: right;
+}
+
+.align-left{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+    padding-right: 20px;
+}
+
+.inline{
+    display: inline;
+}
+
+.star-spacing{
+    padding: 0;
+}
+
+.top-spacing{
+    padding-top: 20px;
+}
+
+.left-spacing{
+    padding-left: 20px;
+}
+
+.right-spacing{
+    padding-right: 20px;
+}
+
+.project {
+    margin: 20px 0px;
+}
+
+.project img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: auto;
+    margin: auto;
+}
+
+.max-height{
+    height: 462px;
+}
+
+.background-red{
+    background-color: var(--red);
+}
+
+.background-orange{
+    background-color: var(--orange);
+}
+
+.background-pink{
+    background-color: var(--pink);
+}
+
+.background-teal{
+    background-color: var(--teal);
+}
+
+.background-purple{
+    background-color: var(--purple);
+}
+
+.background-bright-yellow{
+    background-color: var(--brightYellow);
+}
+
+.project-links a {
+    font-size: 64pt;
+    color: black;
+    text-decoration: none;
+}
+
+.paperboi, .paperboi button{
+    background-color: var(--orange);
+}
+
+.personal {
+    overflow: hidden;
+}
+
+.intro {
+    background-color: var(--black);
+    color: white;
+    height: 300px;
+}
+
+.personal img, .paperboi img, .itouchmyself img, .fizzo img, .mip img, .bezni img {
+    width: 100%;
+}
+
+footer {
+    height : 96px;    
+}
+
+button{
+    float: left;
+    height: 69px;
+    background-color: white;
+    border: none;
+    font-family: 'Bebas Neue';
+    font-size: 20pt;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+}
+
+.email {
+    grid-column: 1;
+}
+
+.circle {
+    display: flex;
+    background-color: lightgrey;
+    height: 24%;
+    aspect-ratio: 1;
+    margin: auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid{
+    height: 4%;
+    margin: auto;
+    border-top: 20px;
+}
+
+.small{
+    height: 3%;
+    margin: auto;
+}
+
+.or{
+    grid-column: 2;
+    text-align: center;
+}
+
+.form {
+    grid-column: 3;
+}
+
+.feedback-input {
+    color:#000000;
+    font-family: 'Bebas Neue';
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid var(--black);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:90%;
+    box-sizing: border-box;
+    outline:0;
+  }
+  /* Submit Button */
+  [type="submit"] {
+      font-family: 'Bebas Neue';
+      width: 90%;
+      background:var(--black);
+      border-radius:5px;
+      border:0;
+      cursor:pointer;
+      color: white;
+      font-size:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      transition: all 0.3s;
+      margin-top:-4px;
+      font-weight:700;
+  }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+    }
+
+    .max-height{
+        height: 231px;
+    }
+
+    .align-left{
+        text-align: left;
+        padding-left: 10px;
+    }
+    
+    .align-right{
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .left-spacing{
+        padding-left: 10px;
+    }
+    
+    .right-spacing{
+        padding-right: 10px;
+    }
+
+    .project-links a {
+        font-size: 32pt;
+        color: black;
+        text-decoration: none;
+    }
+
+    footer {
+        height : 48px;    
+    }
+}
+
+.animation {
+    background-color: var(--red);
+    color: var(--black);
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    animation: scrollToLeft 5s linear infinite;
+}
+  
+@keyframes scrollToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
